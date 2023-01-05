@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-14 pt-md-16 pb-12 pb-md-15 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -83px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-7 text-center">
+          <h1 class="display-1 font-weight-bold text-white">
+            I'm Zhaoyu.
+          </h1>
+          <p class="lead text-white-75 mb-8">
+            I'm a <span class="text-white">fourth-year</span> HCI student currently studying @ University of Washington.
+            I am a passionate, dedicated problem solver who enjoys using software engineering to create positive impact.
+          </p>
+          <div class="text-center">
+            <a href="/assets/img/Andrew_portfolio/Resume.pdf"
+              class="btn btn-success button-width shadow lift text-white mx-2" target=”_blank”>
+              <img src="{{webRoot}}/assets/img/icons/social/resume.svg" class="list-social-icon" alt="...">
+              View Resume
+            </a>
+            <a href="https://www.linkedin.com/in/andrew-liu-6a4980192/"
+              class="btn button-width btn-primary shadow lift text-white mx-2" target=”_blank”>
+              <img src="{{webRoot}}/assets/img/icons/social/linkedin-top.svg" class="home-icon" alt="...">
+              LinkedIn
+            </a>
+            <a class="btn btn-secondary button-width lift text-white mx-2" data-toggle="smooth-scroll"
+              href="https://github.com/AndrewLiu66" target=”_blank”>
+              <img src="{{webRoot}}/assets/img/icons/social/github.svg" class="home-icon" alt="...">
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- ******* About Me ******* -->
+  <section id="about" class="pt-8 pt-md-8 mt-6">
+    <div class="container">
+      <!-- ABout Me Header -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h6 class="text-uppercase text-primary font-weight-bold">
+            About Me
+          </h6>
+          <h1 class="font-weight-bold">
+            Stay <span class="text-primary">Hungry</span>, Be <span class="text-primary">Humble</span>.
+          </h1>
+          <p class="font-size-lg text-muted mb-9">
+            Never do I constrain my curiosity to learn more and achieve more. Whether it's computer science or design,
+            I push myself to the limit.
+          </p>
+        </div>
+      </div>
+
+      <!-- Self Introdution -->
+      <div class="row align-items-center justify-content-around">
+        <div class="col-12 col-md-6">
+          <span class="badge badge-primary-desat-soft badge-pill mb-3">
+            <span class="h6 text-uppercase">
+              Software Engineer
+            </span>
+          </span>
+          <h2>
+            I implement my ideas with <span class="text-primary-desat">Human-Centered Design</span> and
+            <span class="text-primary-desat">Computer Science</span>.
+          </h2>
+          <p class="font-size-lg text-muted mb-6 mb-md-0">
+            As a person with strong curiosity, I dive myself into many different fields: design, program, research, etc.
+            I
+            equipped myself with various skills necessary to implement an idea. I enjoy working in a diverse team
+            and collaborating
+            with a group of people having the same passion.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="assets/img/Andrew_portfolio/Me.png" alt="..."
+            class="screenshot img-fluid mw-md-110 float-left mr-md-6 mb-6 mb-md-0">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* 弧线Shape  ******* -->
+  <div class="position-relative mt-12 pt-10">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-3}}
+    </div>
+  </div>
+
+  <!-- ******* Education ******* -->
+  <section id="education" class="bg-gradient-light-white pt-md-8">
+    <div class="container">
+      <!-- Education Header -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h6 class="text-uppercase text-primary font-weight-bold">
+            Education
+          </h6>
+          <h1 class="font-weight-bold">
+            Where I <span class="text-primary">empower</span> myself.
+          </h1>
+          <p class="font-size-lg text-muted mb-7">
+            It's my honor to study at a university where both the disciplines of UX design and engineering are very
+            strong. UW is where I realized my creativity and passion are limitless.
+          </p>
+        </div>
+      </div>
+
+      <!-- Undergraduate Programs -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card card-row shadow-light-lg mb-6">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <span class="badge badge-pill badge-gray-600 badge-float badge-float-outside">
+                  <span class="h6 text-uppercase">Undergraduate</span>
+                </span>
+              </div>
+              <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
+                style="background-image: url(assets/img/Andrew_portfolio/uw.jpeg);" href="https://www.washington.edu/"
+                target="_blank">
+              </a>
+              <div class="col-12 col-md-6 order-md-1">
+                <a class="card-body" href="https://www.washington.edu/" target="_blank">
+                  <h2 class="font-weight-bold text-left mb-1">
+                    University of Washington, Seattle
+                  </h2>
+                  <p class="font-size-sm text-muted mb-6 mb-md-8">
+                    Bachelor of Engineering, 2018 - 2023
+                  </p>
+                  <div class="list-group list-group-flush mb-0">
+                    <div class="list-group-item d-flex align-items-center">
+                      <div class="mr-auto">
+                        <p class="font-weight-bold mb-1">
+                          Major and Concentration
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Human Centered Design & Engineering, GPA: 3.82
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Focus: Human Computer Interaction
+                        </p>
+                      </div>
+                      <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                        <i class="fe fe-check-square"></i>
+                      </div>
+                    </div>
+                    <div class="list-group-item d-flex align-items-center">
+                      <div class="mr-auto">
+                        <p class="font-weight-bold mb-1">
+                          Achievement
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Received 10 quarterly dean's lists
+                        </p>
+                      </div>
+                      <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                        <i class="fe fe-award"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* 弧线Shape  ******* -->
+  <div class="position-relative mt-12 pt-10">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-6}}
+    </div>
+  </div>
+
+  <!-- ******* Experience ******* -->
+  <section id="experience" class="bg-gradient-light-white mb-12">
+    <div class="container">
+      <!-- Prject header -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h6 class="text-uppercase text-primary font-weight-bold">
+              Experiences
+            </h6>
+            <h1>
+              Practice is the sole criterion for testing <span class="text-primary">truth</span>.
+            </h1>
+            <p class="font-size-lg text-muted mb-7">
+              Along my university journey, I worked for multiple research teams, created, and innovated for different
+              people and different ideas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- first experience -->
+      <div class="row">
+        <div class="col-12 col-md-6" data-aos="fade-up">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/photos/photo-4.jpg" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <div class="position-relative text-end mt-n8 me-n4 mb-3">
+                <span class="badge rounded-pill bg-success">
+                  <span class="h6 text-uppercase">Full-stack developer</span>
+                </span>
+              </div>
+              <h3>
+                Ocean Data Lab
+              </h3>
+              <p class="text-muted">
+                The UW Ocean Data Lab focuses on developing signal processing and data processing frameworks for
+                analyzing acoustic data collected by large underwater networks such as seismic surveys.
+              </p>
+              <a data-bs-toggle="modal" href="#modalOceanJob" class="dropdown-item fw-bold text-primary-desat">
+                My Work <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- second experience -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/photos/photo-5.jpg" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <div class="position-relative text-end mt-n8 me-n4 mb-3">
+                <span class="badge rounded-pill bg-warning">
+                  <span class="h6 text-uppercase">Full-stack Developer</span>
+                </span>
+              </div>
+              <h3>
+                Simoni Lab
+              </h3>
+              <p class="text-muted">
+                Embrace the Sunshine is a software platform that provides brief Cognitive Behavioral Therapy (CBT)-based
+                psychological interventions to help address users’ mental health needs.
+              </p>
+              <a data-bs-toggle="modal" href="#modalSunshineJob" class="dropdown-item fw-bold text-primary-desat">
+                My Work <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Project Header ******* -->
+  <section id="project" class="pt-8 pt-md-11 bg-gradient-light">
+    <!-- Prject header -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h6 class="text-uppercase text-primary font-weight-bold">
+            Projects
+          </h6>
+          <h1>
+            Turn ideas into <span class="text-primary">reality</span>, be <span class="text-primary">Boundless</span>.
+          </h1>
+          <p class="font-size-lg text-muted mb-7">
+            I love exploring the unprecedented ideas that pop up in my head and turn them into real-world
+            applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Employeefind ******* -->
+  <section class="pt-5 pt-lg-5 pb-md-7 pb-lg-10 bg-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-md-6 col-lg-5">
+          <span class="badge rounded-pill bg-primary-soft mb-3">
+            <span class="h6 text-uppercase">Team Project</span>
+          </span>
+          <h2>
+            Design and develop an<br>
+            <span class="text-primary-desat">online Human Resource Platforms</span>.
+          </h2>
+          <p class="font-size-lg text-gray-700 mb-6">
+            Starting from summer 2021, My friend and I began to build Employeefind, a platform to help employers
+            find
+            employees in
+            an
+            fast and intelligent way.
+          </p>
+          <p class="font-size-lg text-gray-700 mb-6">
+            I started by gathering users' pain points and designing an interface to address these pain points. The
+            front-end part of our solution is close to be fully programmed. We constantly test the
+            product usability and hope to deploy the product to the public in late 2022.
+            (Data on the website are currently simulated) &nbsp
+
+            <a class="dropdown-item" data-bs-toggle="modal" href="#modalEmployeefind">
+              <span class="text-primary-desat">Learn More</span>
+            </a>
+          </p>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-primary-desat">
+                  React.js
+                </p>
+              </div>
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-primary-desat mb-lg-0">
+                  Spring Boot
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex">
+                <span class="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </span>
+                <p class="text-primary-desat">
+                  Material UI
+                </p>
+              </div>
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-primary-soft me-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-primary-desat mb-0">
+                  Netlify
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-md-2 mt-sm-5">
+          <!-- Image -->
+          <div class="img-skewed img-skewed-start mb-8 mb-md-0 ">
+            <img src="assets/img/Andrew_portfolio/employeefind.png" alt="..." class="screenshot img-fluid mw-md-120"
+              data-aos="img-skewed-item-start" data-aos-delay="100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Ocean Interface ******* -->
+  <section class="pt-5 pt-md-5 pb-md-7 pb-lg-10">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-md-6 col-lg-5 order-md-2">
+          <!-- Badge -->
+          <span class="badge rounded-pill bg-success-soft mb-3">
+            <span class="h6 text-uppercase">Ocean Data Lab Website</span>
+          </span>
+          <!-- Heading -->
+          <h2>
+            A visualization interface <br>
+            <span class="text-success">created for ocean <span
+                data-typed='{"strings": ["scientists.", "analysts."]}'></span></span>
+          </h2>
+          <!-- Text -->
+          <p class="fs-lg text-muted mb-6">
+            I designed and built the website for the Unversity of Washington Ocean Data Lab in 2022
+            summer.
+            My primary task was to develop an interactive visualization tool for long-term ocean ambient sound data.
+            The major difficulty that I tackled was to find a solution to effectively
+            display
+            the Python graphs on a
+            website built in Javascript.
+            <a class="dropdown-item" data-bs-toggle="modal" href="#modalOcean">
+              <span class="font-weight-bold text-success">Learn More</span>
+            </a>
+          </p>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-success">
+                  React.js
+                </p>
+              </div>
+
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-success mb-lg-0">
+                  Flask
+                </p>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mb-6 mb-md-0">
+              <div class="d-flex">
+                <span class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </span>
+                <p class="text-success">
+                  Mapbox GL JS
+                </p>
+              </div>
+
+              <div class="d-flex">
+                <div class="badge badge-rounded-circle bg-success-soft me-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+                <p class="text-success mb-0">
+                  AWS EC2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
+          <div class="w-100 w-md-120 float-end mb-6 mb-md-0">
+            <div class="shape shape-blur-4 text-gray-200">
+              {{> blurs/blur-4}}
+            </div>
+            <div class="device device-macbook">
+              <img src="assets/img/screenshots/desktop/dashkit-alt-dark.jpg" class="device-screen" alt="...">
+              <img src="assets/img/Andrew_portfolio/Ocean_lab.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* 郑板桥 ******* -->
+  <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax overlay overlay-black overlay-40"
+    style="background-image: url(assets/img/Andrew_portfolio/zhushi.jpeg);">
+
+    <div class="shape shape-top shape-fluid-x svg-shim text-white">
+      {{> angles/angle-top}}
+    </div>
+
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      {{> angles/angle-bottom}}
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <blockquote class="blockquote mb-0">
+            <p class="h2 text-white">
+              "千磨万击还坚劲,任尔东西南北风。"
+            </p>
+            <p class="h4 text-white-80 mb-0">
+              郑板桥，《竹石》
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Work Life Balance ******* -->
+  <section id="hobby" class="pt-8 pt-md-11 mb-12">
+    <div class="container">
+      <!-- header -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h6 class="text-uppercase text-primary font-weight-bold">
+            LAST BUT NOT LEAST
+          </h6>
+          <h1 class="font-weight-bold">
+            Maintain <span class="text-primary">Work</span> and <span class="text-primary">Life</span> Balance.
+          </h1>
+          <p class="font-size-lg text-muted mb-9">
+            A personal hobby creates more balance in my life and gives me more breathing space to think, that allows
+            my
+            subconscious thoughts to bubble up to the surface.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- decription -->
+          <div class="col-12 col-md-6 order-md-2">
+            <span class="badge badge-success-soft badge-pill mb-3">
+              <span class="h6 text-uppercase">
+                Explorer
+              </span>
+            </span>
+            <h2>
+              I explore the spark that <span class="text-success">Art </span>can create.
+            </h2>
+            <p class="font-size-lg text-muted mb-6 mb-md-0">
+              Besides programming, I am also a professionally trained artist. My interest covers hyperrealism art,
+              digital art, and product design. Art creates a space where I can relax myself.
+            </p>
+          </div>
+          <!-- images -->
+          <div class="col-12 col-md-6 order-md-1">
+            <div class="row">
+              <div class="col-6 mr-n5">
+                <img src="assets/img/Andrew_portfolio/greatewall.png" alt="..." class="img-fluid mb-4 rounded"
+                  data-aos="fade-right" data-aos-delay="100">
+                <img src="assets/img/Andrew_portfolio/tea.jpeg" alt="..." class="img-fluid rounded"
+                  data-aos="fade-right" data-aos-delay="150">
+              </div>
+              <div class="col-6 mt-8">
+                <img src="assets/img/Andrew_portfolio/opera.jpeg" alt="..." class="img-fluid mb-4 rounded"
+                  data-aos="fade-right">
+                <img src="assets/img/Andrew_portfolio/lion.png" alt="..." class="img-fluid rounded"
+                  data-aos="fade-right" data-aos-delay="50">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Ending Quote ******* -->
+  <section id="quote" data-jarallax data-speed=".8" class="py-15 overlay overlay-black overlay-60 jarallax mt-6"
+    style="background-image: url(assets/img/Andrew_portfolio/universe.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <blockquote class="blockquote mb-0">
+            <p class="h2 text-white">
+              "Constant dropping wears the stone :)</a>"
+            </p>
+            <p class="h4 text-white-80 mb-0">
+              Andrew Liu, 2021 December
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
