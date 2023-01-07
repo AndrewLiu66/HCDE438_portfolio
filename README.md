@@ -1,6 +1,6 @@
 # Portfolio Website
 
-url: https://andrewliu66.github.io/HCDE438_portfolio/reflection.html
+url: https://andrewliu66.github.io/HCDE438_portfolio/index.html
 
 ## Description
 
