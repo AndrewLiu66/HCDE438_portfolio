@@ -29,3 +29,9 @@ $ npm run build
 ```
 
 The production files will be in the `dist/` folder.
+
+## Deploy
+
+```
+git subtree push --prefix dist HCDE438_portfolio build
+```
