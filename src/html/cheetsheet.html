@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                CHEATSHEET
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 cheatsheet. I will be updating this page as I learn more about HTML, CSS, and Javascript.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8 text-center">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold" style="font-size: 18px">
+        CSS reference
+      </h6>
+
+      <ul>
+        <li>control the timing of the transition using the <p class="text-success" style="display: inline-block;">transition-timing-function</p> property.</li>
+        <li>specify the speed curve of the transition using the <p class="text-success" style="display: inline-block;">transition-timing-function</p>property</li>
+        <li>specify a delay before the transition starts using <p class="text-success" style="display: inline-block;">transition-delay</p> property</li>
+        <li>specify the length of time that the transition should take to complete using the <p class="text-success" style="display: inline-block;">transition-duration</p> property</li>
+        <li>use the <p class="text-success" style="display: inline-block;">none</p> keyword to disable all transitions for an element</li>
+      </ul>
+      <!-- <p class="font-size-lg text-muted">
+
+      </p> -->
+    </div>
+  </div>
+
+  <div class="ms-auto mb-10" style="display: flex; justify-content: center;">
+    <pre style="background-color: #e8e7e6; color: #6b6b6a; border-radius: 10px;">
+      <div style="margin-right: 30px;">
+        .element {
+          /* disable transitions for this element */
+          transition: none;
+        }
+
+        .element:hover {
+          /* enable transitions for this element */
+          transition: all 0.5s ease-in-out 0.5s;
+        }
+
+      </div>
+    </pre>
+  </div>
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
