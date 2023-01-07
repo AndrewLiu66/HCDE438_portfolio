@@ -431,190 +431,63 @@
 
   <!-- ******* Home Cover ******* -->
   <section data-jarallax data-speed=".8"
-    class="pt-14 pt-md-16 pb-12 pb-md-15 overlay overlay-black overlay-50 bg-cover jarallax"
-    style="margin-top: -83px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-7 text-center">
-          <h1 class="display-1 font-weight-bold text-white">
-            I'm Zhaoyu.
-          </h1>
-          <p class="lead text-white-75 mb-8 home_desc" >
-            I'm a <span class="text-white">fourth-year</span> HCI student currently studying @ University of Washington.
-            I am a passionate, dedicated problem solver who enjoys using software engineering to create positive impact.
-          </p>
-          <div class="text-center">
-            <a href="/assets/img/Andrew_portfolio/Resume.pdf"
-              class="btn btn-success button-width shadow lift text-white mx-2" target=”_blank”>
-              <img src="./assets/img/icons/social/resume.svg" class="list-social-icon" alt="...">
-              View Resume
-            </a>
-
-            <a class="btn btn-secondary button-width lift text-white mx-2" data-toggle="smooth-scroll"
-              href="https://github.com/AndrewLiu66" target=”_blank”>
-              <img src="./assets/img/icons/social/github.svg" class="home-icon" alt="...">
-              Github
-            </a>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                CHEATSHEET
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 cheatsheet. I will be updating this page as I learn more about HTML, CSS, and Javascript.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
     </div>
   </section>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8 text-center">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold" style="font-size: 18px">
+        CSS reference
+      </h6>
+
+      <ul>
+        <li>control the timing of the transition using the <p class="text-success" style="display: inline-block;">transition-timing-function</p> property.</li>
+        <li>specify the speed curve of the transition using the <p class="text-success" style="display: inline-block;">transition-timing-function</p>property</li>
+        <li>specify a delay before the transition starts using <p class="text-success" style="display: inline-block;">transition-delay</p> property</li>
+        <li>specify the length of time that the transition should take to complete using the <p class="text-success" style="display: inline-block;">transition-duration</p> property</li>
+        <li>use the <p class="text-success" style="display: inline-block;">none</p> keyword to disable all transitions for an element</li>
+      </ul>
+      <!-- <p class="font-size-lg text-muted">
+
+      </p> -->
+    </div>
+  </div>
+
+  <div class="ms-auto mb-10" style="display: flex; justify-content: center;">
+    <pre style="background-color: #e8e7e6; color: #6b6b6a; border-radius: 10px;">
+      <div style="margin-right: 30px;">
+        .element {
+          /* disable transitions for this element */
+          transition: none;
+        }
+
+        .element:hover {
+          /* enable transitions for this element */
+          transition: all 0.5s ease-in-out 0.5s;
+        }
+
+      </div>
+    </pre>
+  </div>
 
   <!-- ******* SHAPE ******* -->
   <div class="position-relative">
     <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
       <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>    </div>
   </div>
-
-  <!-- ******* About Me ******* -->
-  <section id="about" class="pt-8 pt-md-8 mt-6">
-    <div class="container">
-      <!-- ABout Me Header -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-          <h6 class="text-uppercase text-primary font-weight-bold">
-            About Me
-          </h6>
-          <h1 class="font-weight-bold">
-            Stay <span class="text-primary">Hungry</span>, Be <span class="text-primary">Humble</span>.
-          </h1>
-          <p class="font-size-lg text-muted mb-9">
-            Never do I constrain my curiosity to learn more and achieve more. Whether it's computer science or design,
-            I push myself to the limit.
-          </p>
-        </div>
-      </div>
-
-      <!-- Self Introdution -->
-      <div class="row align-items-center justify-content-around">
-        <div class="col-12 col-md-6">
-          <span class="badge badge-primary-desat-soft badge-pill mb-3">
-            <span class="h6 text-uppercase">
-              Software Engineer
-            </span>
-          </span>
-          <h2>
-            I implement my ideas with <span class="text-primary-desat">Human-Centered Design</span> and
-            <span class="text-primary-desat">Computer Science</span>.
-          </h2>
-          <p class="font-size-lg text-muted mb-6 mb-md-0">
-            As a person with a strong curiosity, I dive into many different fields: design, programming, research, etc. I have equipped myself with the various skills necessary to implement an idea. I enjoy working in diverse teams and collaborating with a group of people who have the same passion.
-          </p>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <img src="assets/img/Andrew_portfolio/Me.png" alt="..."
-            class="screenshot img-fluid mw-md-110 float-left mr-md-6 mb-6 mb-md-0">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ******* 郑板桥 ******* -->
-  <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax overlay overlay-black overlay-40"
-    style="background-image: url(assets/img/Andrew_portfolio/zhushi.jpeg);">
-
-    <div class="shape shape-top shape-fluid-x svg-shim text-white">
-      <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"/></svg>    </div>
-
-    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-      <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"/></svg>    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7">
-          <blockquote class="blockquote mb-0">
-            <p class="h2 text-white">
-              "千磨万击还坚劲,任尔东西南北风。"
-            </p>
-            <p class="h4 text-white-80 mb-0">
-              郑板桥，《竹石》
-            </p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ******* Work Life Balance ******* -->
-  <section id="hobby" class="pt-8 pt-md-11 mb-12">
-    <div class="container">
-      <!-- header -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-          <h6 class="text-uppercase text-primary font-weight-bold">
-            LAST BUT NOT LEAST
-          </h6>
-          <h1 class="font-weight-bold">
-            Maintain <span class="text-primary">Work</span> and <span class="text-primary">Life</span> Balance.
-          </h1>
-          <p class="font-size-lg text-muted mb-9">
-            A personal hobby creates more balance in my life and gives me more breathing space to think, that allows
-            my
-            subconscious thoughts to bubble up to the surface.
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <!-- decription -->
-          <div class="col-12 col-md-6 order-md-2">
-            <span class="badge badge-success-soft badge-pill mb-3">
-              <span class="h6 text-uppercase">
-                Explorer
-              </span>
-            </span>
-            <h2>
-              I explore the spark that <span class="text-success">Art </span>can create.
-            </h2>
-            <p class="font-size-lg text-muted mb-6 mb-md-0">
-              Besides programming, I am also a professionally trained artist. My interest covers hyperrealism art,
-              digital art, and product design. Art creates a space where I can relax myself.
-            </p>
-          </div>
-          <!-- images -->
-          <div class="col-12 col-md-6 order-md-1">
-            <div class="row">
-              <div class="col-6 mr-n5">
-                <img src="assets/img/Andrew_portfolio/greatewall.png" alt="..." class="img-fluid mb-4 rounded"
-                  data-aos="fade-right" data-aos-delay="100">
-                <img src="assets/img/Andrew_portfolio/tea.jpeg" alt="..." class="img-fluid rounded"
-                  data-aos="fade-right" data-aos-delay="150">
-              </div>
-              <div class="col-6 mt-8">
-                <img src="assets/img/Andrew_portfolio/opera.jpeg" alt="..." class="img-fluid mb-4 rounded"
-                  data-aos="fade-right">
-                <img src="assets/img/Andrew_portfolio/lion.png" alt="..." class="img-fluid rounded"
-                  data-aos="fade-right" data-aos-delay="50">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ******* Ending Quote ******* -->
-  <section id="quote" data-jarallax data-speed=".8" class="py-15 overlay overlay-black overlay-60 jarallax mt-6"
-    style="background-image: url(assets/img/Andrew_portfolio/universe.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7">
-          <blockquote class="blockquote mb-0">
-            <p class="h2 text-white">
-              "Constant dropping wears the stone :)</a>
-            </p>
-            <p class="h4 text-white-80 mb-0">
-              Andrew Liu, 2021 December
-            </p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <div class="position-relative">
