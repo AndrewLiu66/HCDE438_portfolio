@@ -447,45 +447,119 @@
     </div>
   </section>
 
-  <section id="experience" class="bg-gradient-light-white mb-12 mt-10">
-    <div class="container">
-      <!-- first experience -->
-      <div class="row">
-        <div class="col-12 col-md-6" data-aos="fade-up">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/photos/photo-4.jpg" alt="..." class="card-img-top">
-            <div class="card-body position-relative">
-              <h3>
-                MP0: Portfolio Site Reflection
-              </h3>
-              <p class="text-muted">
-                In this assignment, I reflected on my experience in HCDE 438 and the projects I worked on.
-              </p>
-              <a data-bs-toggle="modal" href="./A1_reflection.html" class="dropdown-item fw-bold text-primary-desat">
-                Check it out <i class="fe fe-arrow-right ms-3"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- second experience -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/photos/photo-5.jpg" alt="..." class="card-img-top">
-            <div class="card-body position-relative">
-              <h3>
-                MP1: Browser Extension
-              </h3>
-              <p class="text-muted">
-                I worked on a browser extension that serves as a to-do list. Users can add and remove tasks.
-              </p>
 
-              <a class="" data-toggle="smooth-scroll" href="./extension.html">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+        Overview
+      </h6>
+
+      <ol>
+        <li>Set up my development environment. I started by installing a text editor (I used Visual Studio Code) and any necessary dependencies (such as Node.js and npm).</li>
+        <li>Created a new project folder and initialized my project using npm. To do this, I opened a terminal window, navigated to my project folder, and ran the following command: npm init -y. This created a package.json file in my project folder.</li>
+        <li>Installed the necessary packages for my project. This typically involved installing Bootstrap (using npm install bootstrap) and any other dependencies that my project required.</li>
+        <li>Created the HTML structure for my website. I created an index.html file and added the necessary HTML elements (such as &lt;head&gt;, &lt;body&gt;, and &lt;div&gt;) to create the structure of my website.</li>
+        <li>Added the necessary CSS styles for my website. I did this by creating a scss folder and adding a couple of scss files to that folder. I then linked to my stylesheet in the <head> of my index.html file using a <link> element.</li>
+        <li>Added the necessary JavaScript functionality for my website. I did this by creating a js folder and adding a script (such as main.js) to that folder.</li>
+        <li>Set up Webpack for my project. To do this, I installed Webpack (using npm install webpack) and created a configuration file (such as webpack.config.js). I also added a build script to my package.json file to create a production build of my website.</li>
+        <li>Tested my website locally to ensure that it was working as expected. I did this by running a local development server (such as webpack-dev-server) and opening my website in a web browser.</li>
+        <li>Deployed my website to github page. This typically involved creating a production build of my website using the build script I added in step 7, and uploading the built files to my hosting provider or server.</li>
+      </ol>
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        (Below is an image showing the unfinished reflection page)
+      </p>
+
+      <img src="./assets/img/screenshot/unfinish.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
     </div>
-  </section>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Issue
+      </h6>
+
+      <div>I recently encountered an issue when trying to push my changes to a remote repository on GitHub. When I ran the git push command, I received an error message that said "fatal: The current branch master has no upstream branch." After some investigation, I realized that the issue was caused by a misconfigured local repository. To resolve the issue, I followed the steps below:</div>
+
+      <ol>
+        <li>Check the status of my local repository by running the command git status.</li>
+        <li>If the local repository was not configured to track a remote branch, run the command git branch --set-upstream-to=origin/master master to set the upstream branch.</li>
+        <li>Try pushing my changes to the remote repository again using the git push command.</li>
+      </ol>
+
+
+      <div>After following these steps, I was able to successfully push my changes to the remote repository on GitHub.</div>
+    </div>
+  </div>
+
+    <div class="row justify-content-center mt-10 mb-2">
+        <div class="col-12 col-md-10 col-lg-8">
+        <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+            CSS Transition
+        </h6>
+
+        <div>
+            I implemented a CSS transition on the .home_desc element that caused the font size to change when the element was hovered over. The transition was set to take 0.5 seconds to complete and used a cubic-bezier easing function to create a smooth animation. The final font size was set to 20px.
+
+            I chose this CSS transition because I wanted to add a dynamic and visually appealing element to my website. The hover effect helped to draw the user's attention to the element and make the website more engaging.
+
+            To make the transition work, I added the transition and :hover properties to the .home_desc element in my stylesheet. I also specified the duration, easing function, and final font size for the transition.
+
+            Here's an example gif of the CSS transition in action: [Insert gif here]
+
+            Here is an example gif of the CSS transition in action:
+        </div>
+
+        <div class="ms-auto mb-10" style="display: flex; justify-content: space-between; align-items: center;">
+            <pre style="background-color: #e8e7e6; color: #6b6b6a; border-radius: 10px; margin: 0 20px;">
+              <div style="margin-right: 30px;">
+                .home_desc {
+                    transition: font-size 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+                }
+
+                .home_desc:hover {
+                    font-size: 20px !important;
+                }
+
+              </div>
+            </pre>
+            <img src="./assets/img/animation/animation.gif" class="mx-auto mt-6 mb-6" style="display: block; width: 600px; height: 300px;" alt="Animated GIF">
+          </div>
+
+
+
+        <div>
+            For some other animations, I implemented a CSS transition using the data-aos attribute. The data-aos attribute is a part of the AOS (Animate on Scroll) library, which allowed me to add animations to my website as the user scrolled through the page.
+
+            I used the fade-right animation, which caused the images to fade in from the right as the user scrolled down the page. I also added a data-aos-delay attribute to some of the images, which added a delay before the animation began.
+
+            I may have chosen this CSS transition because it added a dynamic and visually appealing element to the website. It could also help to draw the user's attention to the images and make the website more engaging.
+
+            To make the transition work, I included the AOS library in my project and added the data-aos attribute to the elements that I wanted to animate. I then customized the animation and delay using the available options in the AOS library.
+        </div>
+
+
+    </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Ideas and Future:
+      </h6>
+      <ol>
+        <li>A portfolio section showcasing your past projects and work experience</li>
+        <li>An "About Me" page that gives visitors more information about your background, skills, and interests</li>
+        <li>Integration with social media platforms such as LinkedIn, Twitter, or GitHub to allow visitors to connect with you and learn more about your work</li>
+        <li>A optimized responsive design that ensures the website looks and functions well on a variety of devices, including phones and tablets</li>
+        <li>Interactive elements, such as games, to engage visitors and make the site more dynamic</li>
+      </ol>
+
+      <div>Ultimately, the ideas and features I choose to add to my website should align with my goals for the site and the audience I hope to reach.</div>
+    </div>
+  </div>
 
 
   <!-- ******* SHAPE ******* -->
