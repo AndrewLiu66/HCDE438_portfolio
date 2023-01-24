@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                Reflection
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 reflection, where I reflect on my experience in the class and the projects I worked on.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Overview
+      </h6>
+    <div class="col-12 col-md-10 col-lg-8">
+      I built a Google Chrome Extension to help people stay organized by creating a to-do list. It’s made with HTML, CSS, and JavaScript, and designed to make it a breeze to add and delete tasks. To see it in action, simply open the "popup.html" file in your browser and the results will be displayed!
+        Here's a GIF of the extension in action:
+        <img src="{{webRoot}}/assets/img/animation/a1.gif" class="mx-auto mt-6 mb-6" style="display: block; width: 150px; height: 280px;" alt="Animated GIF">
+
+        To use this extension, you will need to install it on your Google Chrome browser. You can do this by visiting the Chrome Web Store, searching for the extension and then adding it to your browser. Once it is installed, you will see the extension icon in the top right corner of your browser. Clicking on this icon will open the extension, and you can start using it to manage your tasks.
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-8">Here is the github repository link to the to-do extension I created:</div>
+    <a class="col-12 col-md-10 col-lg-8" href="https://github.com/AndrewLiu66/todolist-extension" target="_blank">https://github.com/AndrewLiu66/todolist-extension</a>
+
+  </div>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+        Development Process
+      </h6>
+
+      <ol>
+        <li>Planning: I started by outlining the functionality of the extension and creating a visual design for the layout. This included deciding on the overall layout, colors, and typography.</li>
+        <li>Create Layout: I began by writing the HTML and CSS to create the basic layout of the extension. This included creating the structure of the page, and styling it to match the design.</li>
+        <li>Make elements interactive: I then added the interactive elements, such as form fields and buttons, using JavaScript. This allowed users to add new tasks and remove existing tasks.</li>
+        <li>Use Local Storage: To ensure that the user's data is saved even when they close the extension, I used Local Storage to store the data. This way, when the user opens the extension again, they will see their previous data.</li>
+        <li>Testing and debugging: I tested the extension to make sure it doesn't throw errors when running on Google Chrome</li>
+      </ol>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        (Below is an image showing the unfinished reflection page)
+      </p>
+
+      <img src="{{webRoot}}/assets/img/screenshot/A1-unfinished.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
+    </div>
+  </div>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Issue Deep-Dive
+      </h6>
+
+      <div>
+        When making my to-do list using the Google Chrome Extension, I ran across an issue. The issue was that users' changes to the list when they added and removed things were not being preserved when the extension was closed and reopened. The list would always be empty when the extension was reopened since the user-entered data was not being preserved. After doing some investigation, I learned that the only way to save the user-entered data was to store and fetch data in the local storage. I then changed my code to store and retrieve data from local storage using the localStorage.getItem("tasks") method.
+        This enabled me to store the user-entered information and make it accessible upon reopening the extension. I discovered the value of knowing how to save and retrieve data in local storage through this challenge when building a web application. I also discovered how crucial thorough testing and debugging are to finding and fixing code errors. I also learnt how crucial it is to do research, ask for assistance when necessary, and be knowledgeable about the developer tools the browser offers to help with testing and debugging.</div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Ideas and Future:
+      </h6>
+      <ol>
+        <li>Deploy the extension on the Chrome Web Store</li>
+        <li>Add a download button that allows users to download a CSV or PDF file of the items on the to-do list</li>
+        <li>Improve the design and make it more visually attractive by using more advanced CSS techniques</li>
+        <li>Add the ability to sort the items in the list  alphabetically</li>
+        <li>Implement a search feature that allows users to search for specific items in the list</li>
+        <li>Add the ability to categorize tasks into different lists (e.g., work, personal, shopping)</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Kudos
+      </h6>
+      <div>Here is the website that I use to help me create this extension:</div>
+      <a class="col-12 col-md-10 col-lg-8" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</a>
+    </div>
+  </div>
+
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
