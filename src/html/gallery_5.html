@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8" />
+
+  </head>
+  <script>
+    let notes = [58, 62, 64, 65, 67];
+    let oscs = [];
+    let yPos = [];
+    let riseDistance = 20;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      ellipseMode(CENTER);
+      colorMode(HSL);
+
+      // Create an array of oscillators, one for each note
+      for (const note of notes) {
+        osc = new p5.Oscillator();
+        osc.start();
+        osc.amp(0);
+        oscs.push(osc);
+      }
+
+      // Initialize yPos array with the starting y position for each key
+      for (let i = 0; i < notes.length; i++) {
+        yPos[i] = height - 20;
+      }
+    }
+
+    // Function to play note when "a","s","d","f","g" keys are pressed
+    function keyPressed() {
+      // Map keyboard key to the appropriate key
+      let key = -1;
+      if (key == 'a') key = 0;
+      if (key == 's') key = 1;
+      if (key == 'd') key = 2;
+      if (key == 'f') key = 3;
+      if (key == 'g') key = 4;
+
+      if (key != -1) {
+        // Make the selected key rise
+        yPos[key] = height - 20 - riseDistance;
+
+        // Play the note
+        playNote(oscs[key], notes[key]);
+      }
+    }
+
+    function keyPressed() {
+      switch (key) {
+        case 'a':
+          // Make the selected key rise
+          yPos[0] = height - 20 - riseDistance;
+          // Play the note
+          playNote(oscs[0], notes[0]);
+          break;
+        case 's':
+          // Make the selected key rise
+          yPos[1] = height - 20 - riseDistance;
+          // Play the note
+          playNote(oscs[1], notes[1]);
+          break;
+        case 'd':
+          // Make the selected key rise
+          yPos[2] = height - 20 - riseDistance;
+          // Play the note
+          playNote(oscs[2], notes[2]);
+          break;
+        case 'f':
+          // Make the selected key rise
+          yPos[3] = height - 20 - riseDistance;
+          // Play the note
+          playNote(oscs[3], notes[3]);
+          break;
+        case 'g':
+          // Make the selected key rise
+          yPos[4] = height - 20 - riseDistance;
+          // Play the note
+          playNote(oscs[4], notes[4]);
+          break;
+      }
+    }
+
+    function keyReleased() {
+      switch (key) {
+        case 'a':
+          // Return the key to its original position
+          yPos[0] = height - 20;
+          break;
+        case 's':
+          // Return the key to its original position
+          yPos[1] = height - 20;
+          break;
+        case 'd':
+          // Return the key to its original position
+          yPos[2] = height - 20;
+          break;
+        case 'f':
+          // Return the key to its original position
+          yPos[3] = height - 20;
+          break;
+        case 'g':
+          // Return the key to its original position
+          yPos[4] = height - 20;
+          break;
+      }
+    }
+
+    function draw() {
+      background(0);
+      let w = width / notes.length;
+
+      // Iterate through the notes list and draw each key
+      for (let i = 0; i < notes.length; i++) {
+        let x = (i + 0.5) * w;
+        let noteHue = map(x, 0, width, 0, 360);
+
+        fill(noteHue, 70, 80);
+
+        // Draw the key
+        rect(x - w/2, yPos[i], w - 1, 400);
+      }
+    }
+
+    // A function to play a note
+    function playNote(osc, note) {
+      osc.freq(midiToFreq(note), 0.1);
+
+      // increase amplitude over 0.2 seconds, then decrease over 0.5 seconds
+      osc.amp(0.3, 0.2);
+      osc.amp(0, 0.5);
+    }
+
+
+
+        </script>
+</html>

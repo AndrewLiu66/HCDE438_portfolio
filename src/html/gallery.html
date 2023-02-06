@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                P5.js Gallery
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                These are some p5.js demos, feel free to click into each sketch to see a bigger view of the sketch.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-gradient-light-white mb-12 mt-10">
+    <div class="container my-container">
+      <div class="row">
+        <!-- first item -->
+        <div class="col-12 col-md-4 mb-10" data-aos="fade-up">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery1.png" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Static
+              </h3>
+              <p class="text-muted">
+                A combination of orange and purple circles are drawn on the canvas.
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_1.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- second item -->
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery2.png" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Random
+              </h3>
+              <p class="text-muted">
+                Circles with random colors and sizes are drawn on the canvas.
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_2.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- third item -->
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery3.gif" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Infinite Loop
+              </h3>
+              <p class="text-muted">
+                Once the circle hits the edge of the canvas, it will bounce back, and new circles will be drawn.
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_3.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- fourth item -->
+         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery4.gif" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Interactive
+              </h3>
+              <p class="text-muted">
+                The circle jumps once you click your mouse. The faster you click, the faster the circle jumps.
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_4.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- fifth item -->
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery5.gif" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Audio
+              </h3>
+              <p class="text-muted">
+                Press the keys "A", "S", "D", "F", "G" on your keyboard to play the sounds, the height of corresponding piano key gets taller as you press keyboard
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_5.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- sixth item -->
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+            <img src="assets/img/gallery/gallery6.gif" alt="..." class="card-img-top">
+            <div class="card-body position-relative">
+              <h3>
+                Audio and Visual
+              </h3>
+              <p class="text-muted">
+                Speak out loud to make the spectrum (made of circle) fluctuate
+              </p>
+              <a data-bs-toggle="modal" href="{{webRoot}}/gallery_6.html" class="dropdown-item fw-bold text-primary-desat">
+                Check it out <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
