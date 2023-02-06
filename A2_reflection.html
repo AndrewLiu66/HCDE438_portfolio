@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/Andrew_portfolio/avatar.png" type="image/x-icon" />
+  
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+  
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  
+  <!-- Title -->
+  <title>Andrew Liu</title>
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  <!-- Ocean Job -->
+  <div class="modal fade" id="modalOceanJob" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                  <h2 class="mb-1 fw-bold text-center" id="modalSigninVerticalTitle">
+                      Full-Stack Developer
+                  </h2>
+                  <p class="mb-6 text-center text-muted">
+                      Ocean Data Lab, 2022 Summer
+                  </p>
+                  <div class="list-group list-group-flush">
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Ocean Data Lab Website:
+                                  <a href="https://sites.uw.edu/abadi/" class="font-weight-bold text-decoration-none"
+                                      target=”_blank”>
+                                      view
+                                  </a>
+                              </p>
+                              <p class="font-weight-bold mb-1">
+                                  My development product:
+                                  <a href="http://52.43.62.252/" class="font-weight-bold text-decoration-none"
+                                      target=”_blank”>
+                                      <!-- onclick="return false;" -->
+                                      view
+                                  </a>
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Context
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  In the past, members of the Ocean Data Lab have collected over 1.5GB ocean acoustic data
+                                  from large underwater networks. Various types of data visualizations are
+                                  created to better analyze those data. However,
+                                  Those visualizations requires different inputs such as location, time interval, graph
+                                  type, etc, to be generated.
+                                  It will be much convenient to manipulate these required parameters on an interface than
+                                  writing Python codes.
+                              </p>
+                          </div>
+  
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Responsibility
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  Created a website where users can select different locations, graph types, and time
+                                  interval to generate different data visualizations. Website also allows users to
+                                  download the acoustic data in CSV file based on different requirements.
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Takeaway
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  I chosed a tech combination (React + Flask) that I never tried before. My experience of
+                                  building the interface highly improves my problem-solving skills and research skills. I
+                                  got to know Professor Shima and a group of amazing researchers.
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Sunshine Job -->
+  <div class="modal fade" id="modalSunshineJob" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                  <h2 class="mb-1 fw-bold text-center" id="modalSigninVerticalTitle">
+                      Full-stack Developer
+                  </h2>
+                  <p class="mb-6 text-center text-muted">
+                      Simoni Lab, 2022 Summer
+                  </p>
+                  <div class="list-group list-group-flush">
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Simoni Lab website:
+                                  <a href="https://depts.washington.edu/jsimlab/"
+                                      class="font-weight-bold text-decoration-none" target=”_blank”>
+                                      view
+                                  </a>
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Context
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  The Embrace Sunshine team is building a Wechat-based mini-Program to deliver adherence
+                                  intervention for people
+                                  diagnosed with HIV. Furthermore, a management system to manipulate the
+                                  database is also needed to be developed.
+                              </p>
+                          </div>
+  
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Responsibility
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  Assisted in building both the front-end and backend of the Embrace Sunshine Wechat
+                                  Mini-program. Designed and built the front-end interface of the management websit
+                                  for the Mini-program.
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Takeaway
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  As a developer, I highly improved my ability of communicating and collaborating with the
+                                  UI teams within a product development pipeline. I also sharpened my front-end
+                                  programming
+                                  skills as well as getting to learn new tech contents like AWS cloud storaging and
+                                  serverless
+                                  framework.
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Employeefind -->
+  <div class="modal fade" id="modalEmployeefind" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <h2 class="mb-1 fw-bold text-center" id="modalSigninVerticalTitle">
+            Employeefind
+          </h2>
+  
+          <p class="mb-6 text-center text-muted">
+            Simplify your process in finding employees
+          </p>
+          <div class="list-group list-group-flush">
+            <div class="list-group-item d-flex align-items-center">
+              <div class="mr-auto">
+                <p class="font-weight-bold mb-1">
+                  Website Url: <a href="https://62c717173e6d8411c34decbf--meek-lamington-f0bfb6.netlify.app/"
+                    class="font-weight-bold text-decoration-none" target="_blank">
+                    view
+                  </a>
+                </p>
+              </div>
+              <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                <i class="fe fe-book"></i>
+              </div>
+            </div>
+            <div class="list-group-item d-flex align-items-center">
+              <div class="mr-auto">
+                <p class="font-weight-bold mb-1">
+                  Full stack web development
+                </p>
+                <p class="font-size-sm text-muted mb-0">
+                  Developed an online human resource website for recruiters to find employees easily.
+                </p>
+              </div>
+              <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                <i class="fe fe-book"></i>
+              </div>
+            </div>
+            <div class="list-group-item d-flex align-items-center">
+              <div class="mr-auto">
+                <p class="font-weight-bold mb-1">
+                  React front-end
+                </p>
+                <p class="font-size-sm text-muted mb-0">
+                  The website is built on top of one of the most popular front-end frameworks React.js. Components are
+                  created with MaterialUI.
+                </p>
+              </div>
+              <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                <i class="fe fe-database"></i>
+              </div>
+            </div>
+            <div class="list-group-item d-flex align-items-center">
+              <div class="mr-auto">
+                <p class="font-weight-bold mb-1">
+                  Mock backend
+                </p>
+                <p class="font-size-sm text-muted mb-0">
+                  Currently, we are still working on creating the backend server to serve the need of send data to the
+                  front-end website. Thus, All the data shown on the website are now mocked by npm package
+                  axios-mock-adapter.
+                </p>
+              </div>
+              <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                <i class="fe fe-code"></i>
+              </div>
+            </div>
+            <div class="list-group-item d-flex align-items-center">
+              <div class="mr-auto">
+                <p class="font-weight-bold mb-1">
+                  Modern Deployment
+                </p>
+                <p class="font-size-sm text-muted mb-0">
+                  The front-end website is currently hosted on Netlify for viewing purpose. When the backend is ready, we
+                  will deploy on Amazon AWS EC2.
+                </p>
+              </div>
+              <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                <i class="fe fe-cloud"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Ocean -->
+  <div class="modal fade" id="modalOcean" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                  <h2 class="mb-1 fw-bold text-center" id="modalSigninVerticalTitle">
+                      Ocean Data Lab
+                  </h2>
+  
+                  <p class="mb-6 text-center text-muted">
+                      Visualize Hydrophone Data
+                  </p>
+                  <div class="list-group list-group-flush">
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  My development work: <a href="http://52.43.62.252/"
+                                      class="font-weight-bold text-decoration-none" target=”_blank”>
+                                      <!-- onclick="return false;" -->
+                                      view
+                                  </a>
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Topic
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  Designed and developed a responsive website to help visualize and download hydrophone
+                                  data for Ocean Data Lab led by
+                                  Professor Shima Abadi
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-book"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  React front-end
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  The website is built on top of one of the most popular front-end frameworks React.js.
+                                  UI components are
+                                  created with MaterialUI, and map is powered by react-map-gl
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-database"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Flask backend
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  Many scientific graphs can only be created with the help of Python libraries. Thus, I
+                                  chose Flask, a micro web
+                                  framework written in Python, to serve as the backend server for the website.
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-code"></i>
+                          </div>
+                      </div>
+                      <div class="list-group-item d-flex align-items-center">
+                          <div class="mr-auto">
+                              <p class="font-weight-bold mb-1">
+                                  Modern Deployment
+                              </p>
+                              <p class="font-size-sm text-muted mb-0">
+                                  The interactive visualization tool is deployed on AWS EC2 for public usage
+                              </p>
+                          </div>
+                          <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                              <i class="fe fe-cloud"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
+    <div class="container">
+  
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/Andrew_portfolio/avatar.png" class="navbar-brand-img" alt="...">
+      </a>
+  
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+  
+        <!-- Navigation -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="smooth-scroll" href="./index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="smooth-scroll" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="smooth-scroll" href="./cheetsheet.html">Cheatsheet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="smooth-scroll" href="./reflection.html">Write Up</a>
+          </li>
+        </ul>
+  
+      </div>
+  
+    </div>
+  </nav>
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                Reflection - P5.js
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 reflection, where I reflect on my experience in the class and the projects I worked on.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+        Overview and Usage
+      </h6>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Overview: This project is created using p5.js and features six different sketches, ranging from static to interactive. The first graph consists of orange and purple circles drawn on the canvas. The second graph features circles with random colors and sizes. The third graph features circles that bounce back when they reach the edge of the canvas, with new circles being drawn. The fourth graph is interactive, with circles jumping when the mouse is clicked, with the speed of the jump depending on the clicking speed. The fifth graph allows users to play sounds by pressing the keys "A", "S", "D", "F", "G" on the keyboard, and the height of the corresponding piano key increases as the keys are pressed. The final graph is a spectrum made of circles that fluctuate based on the user's spoken audio input.
+
+        Usage: To view all the sketches, you can click the "Gallery" tab in the navigation bar or go to the home page and click "P5.js Gallery." Both options will take you to the gallery page, where you can explore each sketch by clicking "Check it out."
+      </p>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+
+        Usage: To view all the sketches, you can click the "Gallery" tab in the navigation bar or go to the home page and click "P5.js Gallery." Both options will take you to the gallery page, where you can explore each sketch by clicking "Check it out."
+      </p>
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Or, you can click the linked text below to view the gallery page.
+        <a data-bs-toggle="modal" href="./gallery.html" class="dropdown-item fw-bold text-primary-desat">
+          Check it out <i class="fe fe-arrow-right ms-3"></i>
+        </a>
+      </p>
+
+      <img src="./assets/img/gallery/gallery_overview.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Development Process
+      </h6>
+      <div>Below are the concrete steps I took while developing each sketch. The overall process contains some similarities, as no matter what graph I create, I always need to set the background, create a canvas, and have a draw function to render the content.</div>
+
+
+      <ol>
+        <li>First graph:
+          <ol>
+            <li>Create a canvas of the desired size.</li>
+            <li>Set the background color.</li>
+            <li>Use nested for loops to draw circles on the canvas, alternating between orange and purple colors.</li>
+            <li>Use the circle() function to draw the circles, with the x-coordinate and y-coordinate being incremented by 50 in each iteration of the loop, and the size being set to 50.</li>
+            <li>Use the fill() function to set the color of the circles based on the sum of the x-coordinate and y-coordinate being an even or odd number.</li>
+          </ol>
+        </li>
+        <li>Second graph:
+          <ol>
+            <li>Create a canvas of the desired size.</li>
+            <li>Set the background color.</li>
+            <li>Use a for loop to draw circles on the canvas with random colors and sizes.</li>
+            <li>Use the fill() function to set a random color for each circle using the random() function.</li>
+            <li>Use the circle() function to draw the circles with the x-coordinate and y-coordinate being incremented by a random amount in each iteration of the loop, and the size being set to a random value.</li>
+          </ol>
+        </li>
+        <li>Third graph:
+          <ol>
+            <li>Create a canvas of the desired size.</li>
+            <li>Set the background color.</li>
+            <li>Use a for loop to draw circles on the canvas that bounce back when they hit the edge of the canvas.</li>
+            <li>Use variables to keep track of the x-coordinate, y-coordinate, and speed of the circle, and update them in each iteration of the loop.</li>
+            <li>Use an if statement to check if the circle has hit the edge of the canvas, and reverse its speed if it has.</li>
+            <li>Use the circle() function to draw the circle, and the fill() function to set its color.</li>
+          </ol>
+        </li>
+        <li>Fourth graph:
+          <ol>
+            <li> The canvas is created with a width and height equal to the window's width and height. </li>
+            <li> The initial y-coordinate of the circle is set to be 50 pixels above the bottom of the canvas. </li>
+            <li> The initial speed is set to 0 and the gravity is set to 0.5. </li>
+            <li> In the draw() function:
+              <ul>
+                <li> The background is set to white. </li>
+                <li> An orange circle is drawn at the x-coordinate of the canvas's center and y-coordinate of "y". </li>
+                <li> The value of "y" is updated by adding the value of "speed". </li>
+                <li> The value of "speed" is updated by adding the value of "gravity". </li>
+                <li> If the value of "y" is greater than the height of the canvas minus 50, the value of "speed" is updated to be -0.9 times its original value and the value of "y" is set to be height minus 50. </li>
+                <li> If the value of "y" is less than 0, the value of "speed" is updated to be negative of its original value and the value of "y" is set to 0. </li>
+              </ul>
+            </li>
+            <li> In the mousePressed() function, the value of "speed" is decremented by 15. </li>
+          </ol>
+        </li>
+        <li>For the fifth graph:
+          <ol>
+            <li>Create a function to handle the press of the keys "A", "S", "D", "F", "G".</li>
+            <li>Use the `keyPressed()` function to detect when the keys are pressed.</li>
+            <li>When the key is pressed, play the corresponding sound using the `sound()` function in p5.js.</li>
+            <li>Visualize the sound by changing the height of the corresponding piano key on the canvas when the key is pressed.</li>
+          </ol>
+        </li>
+        <li>For the sixth graph:
+          <ol>
+            <li>Create an audio input (mic) and an FFT object to perform a Fast Fourier Transform on the audio input</li>
+            <li>Initialize an array of Circle objects and specify their starting position and size</li>
+            <li>In the draw function:
+              <ol>
+                <li>Clear the background</li>
+                <li>Perform an FFT analysis on the audio input</li>
+                <li>Update the position of each Circle based on the sound level in the audio input</li>
+                <li>Display each Circle on the canvas</li>
+              </ol>
+            </li>
+            <li>Define the Circle class with methods to update the position based on the sound level and to display the Circle on the canvas</li>
+          </ol>
+        </li>
+      </ol>
+
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Issue
+      </h6>
+      <div>When creating an effect for sketch 5 in p5.js, I encountered a problem with not knowing how to play sound. I struggled for a bit to find a solution.</div>
+      <ol>
+        <li>I looked at the sample code provided by p5.js</li>
+        <li>I modified the demo code within the online compiler</li>
+        <li>I made changes to the code to achieve the desired outcome</li>
+      </ol>
+      <div>As a result of these steps, I was able to resolve the issue and play sound in the effect for sketch 5.</div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Ideas and Future:
+      </h6>
+      <ol>
+        <li> Try out more complex functionality of p5.js and make the output visual graph more visually appealing</li>
+        <li> Create a sketch that can listen to click, hover, and keyboard pressing events, making the user experience more versatile</li>
+        <li> Add a color theme for existing works and make them look nicer as well</li>
+      </ol>
+
+      <div>Ultimately, the ideas and features I choose to add to my website should align with my goals for the site and the audience I hope to reach.</div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        kudo:
+      </h6>
+      <div>Below are resources that have helped guide my development of my work:</div>
+      <p>      <a href="https://p5js.org/reference/" target="_blank">p5.js Reference</a></p>
+      <p>      <a href="https://p5js.org/reference/#/libraries/p5.sound" target="_blank">https://p5js.org/reference/#/libraries/p5.sounde</a></p>
+      <p>     <a href="https://p5js.org/examples/" target="_blank">https://p5js.org/examples/</a></p>
+    </div>
+  </div>
+
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>  </div>
+  </div>
+  
+  <section class="pt-6 pt-md-8 bg-gray-200">
+    <div class="container pb-6 pb-md-8 border-bottom border-gray-300">
+      <div class="row align-items-center">
+        <div class="col-12 col-md">
+          <h3 class="mb-1 font-weight-bold">
+            Thanks for viewing my portfolio.
+          </h3>
+          <p class="font-size-lg text-muted mb-6 mb-md-0">
+        </div>
+        <div class="col-12 col-md-5">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="py-8 py-md-11 bg-gray-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <!-- Text -->
+          <p class="text-gray-700 mb-2">
+            Interdisciplinary explorer.
+          </p>
+  
+          <!-- Social -->
+          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://www.instagram.com/zhao_yu_liu/" class="text-decoration-none" target=”_blank”>
+                <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://www.facebook.com/profile.php?id=100009780138147" class="text-decoration-none"
+                target=”_blank”>
+                <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://github.com/AndrewLiu66" class="text-decoration-none" target=”_blank”>
+                <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+  
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Email
+          </h6>
+  
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                zhaoyu.liu@hotmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-12 col-md-4 col-lg-3">
+  
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Telephone
+          </h6>
+  
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                +1 2068868619
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                +86 13928843801
+              </a>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="col-12 col-md-4 offset-md-4 col-lg-3 offset-lg-0">
+  
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Location
+          </h6>
+  
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Seattle, USA
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Guangzhou, China
+              </a>
+            </li>
+          </ul>
+  
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+  
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>

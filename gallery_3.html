@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Colorful Lines</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script>
+let balls = [];
+let count = 0;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  let b = new Ball();
+  balls.push(b);
+}
+
+function draw() {
+  background(255);
+  for (let i = 0; i < balls.length; i++) {
+    let b = balls[i];
+    b.move();
+    b.checkEdges();
+    b.display();
+  }
+}
+
+class Ball {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+    this.diameter = 50;
+    this.color = color(random(255), random(255), random(255));
+    this.speedX = random(-5, 5);
+    this.speedY = random(-5, 5);
+  }
+
+  move() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+  }
+
+  checkEdges() {
+    if (this.x + this.diameter / 2 >= width || this.x - this.diameter / 2 <= 0) {
+      this.speedX = -this.speedX;
+      if (count < 200) {
+        let newBall = new Ball();
+        balls.push(newBall);
+        count++;
+      }
+    }
+    if (this.y + this.diameter / 2 >= height || this.y - this.diameter / 2 <= 0) {
+      this.speedY = -this.speedY;
+    }
+  }
+
+  display() {
+    fill(this.color);
+    noStroke();
+    ellipse(this.x, this.y, this.diameter, this.diameter);
+  }
+}
+
+
+    </script>
+  </head>
+</html>
