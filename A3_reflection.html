@@ -440,7 +440,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-7 text-center">
               <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
-                Reflection
+                Reflection - Dev Tool Chain
               </h3>
               <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
                 This is my HCDE 438 reflection, where I reflect on my experience in the class and the projects I worked on.
@@ -450,77 +450,98 @@
     </div>
   </section>
 
-  <section id="experience" class="bg-gradient-light-white mb-12 mt-10">
-    <div class="container">
-      <!-- first experience -->
-      <div class="row">
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/photos/photo-4.jpg" alt="..." class="card-img-top">
-            <div class="card-body position-relative">
-              <h3>
-                MP0: Portfolio Site Reflection
-              </h3>
-              <p class="text-muted">
-                In this assignment, I reflected on my experience in HCDE 438 and the projects I worked on.
-              </p>
-              <a data-bs-toggle="modal" href="./A1_reflection.html" class="dropdown-item fw-bold text-primary-desat">
-                Check it out <i class="fe fe-arrow-right ms-3"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- second experience -->
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/photos/photo-5.jpg" alt="..." class="card-img-top">
-            <div class="card-body position-relative">
-              <h3>
-                MP1: Browser Extension
-              </h3>
-              <p class="text-muted">
-                I worked on a browser extension that serves as a to-do list. Users can add and remove tasks.
-              </p>
 
-              <a class="" data-toggle="smooth-scroll" href="./extension.html">Check it out</a>
-            </div>
-          </div>
-        </div>
-        <!-- third experience -->
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/gallery/gallery4.gif" alt="..." class="card-img-top">
-            <div class="card-body position-relative">
-              <h3>
-                MP2: Creative Coding Explorations
-              </h3>
-              <p class="text-muted">
-                I used p5.js to create 6 sketchs
-              </p>
 
-              <a class="" data-toggle="smooth-scroll" href="./A2_reflection.html">Check it out</a>
-            </div>
-          </div>
-        </div>
-         <!-- fourth experience -->
-         <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-            <img src="assets/img/animation/snake.gif" alt="..." class="card-img-top" style="min-height: 480px;">
-            <div class="card-body position-relative">
-              <h3>
-                MP3: Dev Tool Chain
-              </h3>
-              <p class="text-muted">
-                I used p5.js to create a Gluttonous Snake Game
-              </p>
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+        Overview and Usage
+      </h6>
 
-              <a class="" data-toggle="smooth-scroll" href="./A3_reflection.html">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Overview: I am using the p5.js library and have created a gluttonous snake game. To start playing, click the "Start Game" button and you will enter the game immediately. There is a score panel in the top left corner that displays the number of points you have earned (which corresponds to the number of red boxes the snake eats). If the snake eats itself or hits the wall (the edge of the browser window), the game is over. You can restart the game by clicking the "Start Game" button again. Enjoy the game!
+
+      </p>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Or, you can click the linked text below to view the game page.
+        <a href="https://andrewliu66.github.io/snake-game/" target="_blank" class="dropdown-item fw-bold text-primary-desat">
+          https://andrewliu66.github.io/snake-game/ <i class="fe fe-arrow-right ms-3"></i>
+        </a>
+      </p>
+
+      <img src="./assets/img/gallery/snake.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
     </div>
-  </section>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Development Process
+      </h6>
+      <div>Here's a step-by-step overview of how to build the gluttonous snake game using p5.js:</div>
+
+      <ol>
+        <li>Set up the basic HTML structure for the game, including a canvas element and a "Start Game" button. Also include a script tag to include the p5.js library.</li>
+        <li>Define global variables for the snake, food, scale, score, and a flag to indicate whether the game has started.</li>
+        <li>Create the setup function. In this function, create the canvas, create a new snake object, set the frame rate, and call the pickLocation function to create the initial location of the food.</li>
+        <li>Create the draw function. In this function, set the background color, check if the game has started, update the position of the snake, check if the snake has eaten the food, check if the snake has died, and draw the snake and food on the canvas.</li>
+        <li>Create the keyPressed function. In this function, set the direction of the snake based on the key that was pressed.</li>
+        <li>Create the pickLocation function. In this function, generate a random location for the food.</li>
+        <li>Create the restartGame function. In this function, reset the score, create a new snake object, and call the pickLocation function to create the initial location of the food. Also reset the gameStarted flag to false.</li>
+        <li>Define the Snake class. In the constructor function, initialize the head of the snake at the center of the canvas. In the dir function, set the direction of the snake based on the x and y parameters. In the update function, update the position of the head and tail of the snake. In the death function, check if the snake has died by going off the screen or hitting its tail. In the eat function, check if the snake has eaten the food. In the show function, draw the snake on the canvas.</li>
+        <li>Add an event listener to the "Start Game" button that calls the setup function and sets the gameStarted flag to true.</li>
+        <li>Test the game and make adjustments as needed.</li>
+      </ol>
+
+      <p>Here is an image of the unfinished state of the game:</p>
+      <img src="./assets/img/gallery/snake_unfinish.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Issue
+      </h6>
+      <div>During the game creation process, I encountered an issue where the snake would not stop once it hit the wall. I struggled for a bit to find a solution, but here are the steps I took to resolve the issue:</div>
+      <ol>
+        <li>I located the function that defines the end condition of the game.</li>
+        <li>I modified the condition in the if statement to fix the bug.</li>
+        <li>I replayed the game to ensure that it worked.</li>
+      </ol>
+      <div>As a result of these steps, I was able to resolve the issue and make the game work.</div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Ideas and Future:
+      </h6>
+      <ul>
+        <li>Add different difficulty levels (easy, medium, hard) to make the game more challenging.</li>
+        <li>Allow the player to choose the size of the game board, giving them more control over the game.</li>
+        <li>Implement a two-player mode, where two people can compete against each other.</li>
+      </ul>
+
+      <div>Ultimately, the ideas and features I choose to add to my website should align with my goals for the site and the audience I hope to reach.</div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        kudo:
+      </h6>
+      <div>Below are resources that have helped guide my development of my work:</div>
+      <p>      <a href="https://github.com/branchwelder/example-game" target="_blank">game example</a></p>
+      <p>      <a href="https://creative-coding.decontextualize.com/making-games-with-p5-play/" target="_blank">https://creative-coding.decontextualize.com/making-games-with-p5-play/</a></p>
+    </div>
+  </div>
 
 
   <!-- ******* SHAPE ******* -->
