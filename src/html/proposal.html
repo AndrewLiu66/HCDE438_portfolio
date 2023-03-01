@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                Final Project Proposal
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 reflection, where I reflect on my experience in the class and the projects I worked on.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+        <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+            Project Proposal: Enhanced Snake Game with Power-ups and Obstacles
+        </h6>
+
+        <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+            In this project, I will enhance the classic snake game by adding power-ups and obstacles to make the game more exciting and challenging. The game will be built using the p5.js library.
+        </p>
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Features
+      </h6>
+      <div>1.Power-ups: The game will have power-ups that appear randomly on the screen and give the snake different abilities or bonuses. Some examples of power-ups include:</div>
+        <ul>
+            <li>Speed Boost: Increases the snake's speed for a limited time.</li>
+            <li>Longer Body: Adds extra segments to the snake's body, making it longer.</li>
+        </ul>
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-8">
+        <div>2.Obstacles: The game will have obstacles that the snake needs to avoid to stay alive. Some examples of obstacles include:</div>
+        <ul>
+            <li>Walls: The snake will need to avoid hitting the walls to prevent losing the game.</li>
+            <li>Moving Obstacles: Obstacles that move around the screen, making it harder for the snake to navigate.</li>
+            <li>Enemies: Other snakes or creatures that move around the screen, and if the snake collides with them, it will lose the game.</li>
+            </ul>
+      </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Technical Details:
+      </h6>
+      <div>The game will be built using the p5.js library and JavaScript. I will use object-oriented programming concepts to create the snake, power-ups, and obstacles as objects. The snake's movement will be controlled using keyboard events, and collision detection will be implemented to check if the snake collides with walls, obstacles, or enemies.</div>
+
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Conclusion
+      </h6>
+      <div>By adding power-ups and obstacles to the classic snake game, I can create a more engaging and challenging gaming experience. This project will not only improve my programming skills but also enhance my problem-solving and creativity. Enjoy the game!</div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
