@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Andrew Liu"}}
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  {{> partials/modals}}
+
+  <!-- NAVBAR -->
+  {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top" container="container" button="primary"}}
+
+  <!-- ******* Home Cover ******* -->
+  <section data-jarallax data-speed=".8"
+    class="pt-3 pt-md-2 pb-2 pb-md-10 overlay overlay-black overlay-50 bg-cover jarallax"
+    style="margin-top: -10px; background-image: url(assets/img/Andrew_portfolio/background.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 text-center">
+              <h3 class="display-1 font-weight-bold text-white" style="margin-bottom: -10px; font-size: 48px; margin-top: 100px;" >
+                Final Project Prototype: The New Snake Game
+              </h3>
+              <p class="lead mb-2 mt-7" style="font-size: 18px; color: white !important" >
+                This is my HCDE 438 reflection, where I reflect on my experience in the class and the projects I worked on.
+              </p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-center text-primary font-weight-bold" style="font-size: 18px">
+        Overview and Usage
+      </h6>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Overview: I am using the p5.js library to create a gluttonous snake game. To start playing, click the "Start Game" button, and you will enter the game immediately. There is a score panel in the top left corner that displays the number of points you have earned (which corresponds to the number of red boxes the snake eats). If the snake eats itself or hits the wall (the edge of the browser window), the game is over. There are power-up foods embedded in this new version of the game. This special food will either speed up the snake or make the snake longer.
+
+        You can restart the game by clicking the "Start Game" button again. Enjoy the game!
+
+      </p>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Or, you can click the linked text below to view the game page.
+        <a href="https://andrewliu66.github.io/snake-game/" target="_blank" class="dropdown-item fw-bold text-primary-desat">
+            https://andrewliu66.github.io/snake-game/ <i class="fe fe-arrow-right ms-3"></i>
+        </a>
+      </p>
+
+      <p class="lead mb-2 mt-7" style="font-size: 18px;" >
+        Here is the github repository link:
+        <a href="https://github.com/AndrewLiu66/snake-game" target="_blank" class="dropdown-item fw-bold text-primary-desat">
+            https://github.com/AndrewLiu66/snake-game <i class="fe fe-arrow-right ms-3"></i>
+        </a>
+      </p>
+
+      <img src="{{webRoot}}/assets/img/gallery/snake_prototype.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Project scope
+      </h6>
+      <div>
+        My project has become more fun and complex compared to the one I created for the tool chain assignment. The Snake game now has more interesting features that have been added to enhance the gameplay experience. One significant addition to the game is the second power-up ability, which required modifying the code to ensure that the snake could properly acquire both abilities. The two abilities are the blue box that appears on the screen, which gives the snake a new ability for a short amount of time, such as increasing speed or gaining 5 more points while getting longer. In addition, I have also added walls to the game, which increases the difficulty level. As a result, my project scope has expanded from its initial plan, but these additions have significantly improved the overall quality and user experience of the game.
+     </div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Time management
+      </h6>
+      <div>
+        During the development process of my Snake game prototype, although the new features may seem straightforward and simple, I definitely spent more time than I had initially planned. I encountered a few roadblocks that affected my original schedule. For instance, I had to spend more time than I anticipated on the power-up feature of the game. This involved modifying the existing code to ensure that the snake could acquire and use the two abilities properly. Additionally, I had to add walls to improve the game's difficulty. These unanticipated tasks added to the amount of time I spent building the prototype. Overall, my time management plan for building the prototype was good, but the unanticipated roadblocks and setbacks I encountered required me to be flexible and adjust my schedule accordingly.
+     </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Implementation plan
+      </h6>
+      <div>
+        I would say that I am definitely on track to complete my final project. I have spent a decent amount of time ensuring that the core features of the updated Snake game work properly. This prototype represents a large portion of my final project, and for the final project, I will simply refine the style and instructions of the game to make it more engaging for users.
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Development Process
+      </h6>
+      <div>Since this prototype was built on top of the old game, I will outline the steps that are new to the previous version. Here's a step-by-step overview of how to add new features to the gluttonous snake game using p5.js:</div>
+
+      <ol>
+        <li>Identify the new features to be added to the game.</li>
+        <li>Research and gather necessary resources such as images, sounds, or libraries required to implement the new features.</li>
+        <li>Create a list of tasks required to implement the new features.</li>
+        <li>Update the HTML structure if necessary to accommodate the new features.</li>
+        <li>Update the global variables and initialize them to default values.</li>
+        <li>Modify the setup function to include new features such as power-ups, new game modes, or different difficulty levels.</li>
+        <li>Modify the draw function to include new features such as displaying score, health, or a timer.</li>
+        <li>Create new functions to handle the new features such as a function to spawn power-ups, a function to handle collisions with new game elements, or a function to change difficulty levels.</li>
+        <li>Update the Snake class or any other class used in the game to accommodate the new features.</li>
+        <li>Test the game with the new features and make necessary adjustments.</li>
+        <li>Optimize the code and remove any bugs that may have arisen during the implementation of the new features.</li>
+        <li>Publish the updated game for users to enjoy.</li>
+        </ol>
+
+
+
+      <p>Here is an image of the unfinished state of the game:</p>
+      <img src="{{webRoot}}/assets/img/gallery/snake.png" class="mx-auto" style="display: block; width: 650px; height: 400px" alt="Reflection">
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-2">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary text-center font-weight-bold" style="font-size: 18px">
+        Issue
+      </h6>
+      <div>During the game creation process, I encountered an issue where the program could not assign the two power-up abilities to the snake properly. Here are my solutions:</div>
+      <ol>
+        <li>I located the function that defines the "if" statement that controls the type of ability the power-up fruit gives to the snake.</li>
+        <li>I modified the condition in the if statement to fix the bug with the help of console.log.</li>
+        <li>I replayed the game to ensure that it worked properly.</li>
+    </ol>
+      <div>As a result of these steps, I was able to resolve the issue and make the game work.</div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        Ideas and Future:
+      </h6>
+      <ul>
+        <li>Replace the snake with more high-fidelity images instead of using rectangles.</li>
+        <li>Give notice to users once the snake eats the power-up fruit.</li>
+</ul>
+
+      <div>Ultimately, the ideas and features I choose to add to my website should align with my goals for the site and the audience I hope to reach.</div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-10 mb-10">
+    <div class="col-12 col-md-10 col-lg-8">
+      <h6 class="font-size-lg text-uppercase text-primary font-weight-bold text-center" style="font-size: 18px">
+        kudo:
+      </h6>
+      <div>Below are resources that have helped guide my development of my work:</div>
+      <p>      <a href="https://github.com/branchwelder/example-game" target="_blank">game example</a></p>
+      <p>      <a href="https://creative-coding.decontextualize.com/making-games-with-p5-play/" target="_blank">https://creative-coding.decontextualize.com/making-games-with-p5-play/</a></p>
+    </div>
+  </div>
+
+
+  <!-- ******* SHAPE ******* -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      {{> curves/curve-1}}
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  {{> partials/footer classList="bg-gray-200"}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
